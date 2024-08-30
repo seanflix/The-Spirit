@@ -106,6 +106,12 @@ function init() {
 
     _gui = new dat.GUI();
 
+    /**
+     * Hide GUI controls
+     */
+    _gui.domElement.hidden = true;
+    console.log(_gui.domElement.hidden);
+
     if(settings.isMobile) {
         _gui.close();
         _control.enabled = false;
